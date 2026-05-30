@@ -1,4 +1,4 @@
-public class Task2 {
+public class Task2 {+
 public static void main(String[] args) {
     boolean bol = true;
     byte byt = 0;
@@ -8,8 +8,10 @@ public static void main(String[] args) {
     char H = 72;
     char w = 'w';
     float fl = 2.0f;
-    String Output = String.valueOf(H)+st+n+" "+w+byt+s+" "+fl+" "+bol;
+    String Output = new String(new char[]{H})+st+n+" "+w+byt+s+" "+fl+" "+bol;
     
     System.out.println(Output);
 }
-}
+
+ } 
+
