@@ -21,6 +21,7 @@ public class LargeNumber {
             System.out.println("Larger number is " + c);
         }
 
+        System.out.println();
         num.close();
 
     }
