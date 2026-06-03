@@ -4,7 +4,6 @@ public class LargeNumber {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
 
-
         System.out.println("Enter 1st Number?");
         int a = num.nextInt();
 
@@ -23,9 +22,6 @@ public class LargeNumber {
         }
 
         num.close();
-
-
-        
 
     }
 
