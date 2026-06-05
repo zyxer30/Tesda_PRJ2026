@@ -1,8 +1,8 @@
 import java.util.Scanner;
 /***
- * LargeNumber.java
+ * Task5.java
  * 
- * Class name LargeNumber.java
+ * Class name Task5.java
  * Asks the user to input 3 numbers and prints the largest number.
  * 
  *  Enter 1st Number?
@@ -15,7 +15,7 @@ import java.util.Scanner;
  */ 
 
 
-public class LargeNumber {
+public class Task5 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
 
