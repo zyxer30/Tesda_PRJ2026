@@ -5,7 +5,7 @@ public class Task3 {
         String c = a;
         String d = c;
 
-        boolean b1 = a == b;
+        boolean b1 = a.equals(b);
         boolean b2 = d.equals(b);
         boolean b3 = c.equals(a);
 
