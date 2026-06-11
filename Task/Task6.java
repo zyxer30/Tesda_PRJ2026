@@ -28,10 +28,12 @@ public static void main(String[] args) {
         if (numbers[j] == 237) {
             break;
         }
-        if (numbers[j] % 2 == 0) {
+        else if (numbers[j] % 2 == 0) {
             System.out.println(numbers[j]);
         }
     }
-    }
 
+    System.out.println();
+    }
+    
 }
