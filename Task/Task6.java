@@ -28,7 +28,7 @@ public static void main(String[] args) {
         if (numbers[j] == 237) {
             break;
         }
-        else if (numbers[j] % 2 == 0) {
+        if (numbers[j] % 2 == 0) {
             System.out.println(numbers[j]);
         }
     }
