@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /***
  * Task3.java
  * 
@@ -20,7 +18,7 @@
  *  }  
  */
 
->>>>>>> 5419df2
+
 public class Task3 {
     public static void main(String[] args) {
         String a = new String("Wow");
@@ -28,21 +26,18 @@ public class Task3 {
         String c = a;
         String d = c;
 
-<<<<<<< HEAD
+
         boolean b1 = a.toString().equals(b);
-=======
-        boolean b1 = a.equals(b);
->>>>>>> 5419df2
         boolean b2 = d.equals(b);
         boolean b3 = c.equals(a);
 
         if (b1 && b2 && b3) {
             System.out.println("Success");
-<<<<<<< HEAD
+
             
         }
-=======
+
         } 
->>>>>>> 5419df2
+
     }
 }
