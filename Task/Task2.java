@@ -8,11 +8,8 @@ public static void main(String[] args) {
     char H = 72;
     char w = 'w';
     float fl = 2.0f;
-<<<<<<< HEAD
-    String Output = new String(new char[]{H})+st+num+" "+w+byt+s+" "+fl+" "+bol;
-=======
+
     String Output = new String(new char[]{H})+st+n+" "+w+byt+s+" "+fl+" "+bol;
->>>>>>> 5419df2
     
     System.out.println(Output);
 }
