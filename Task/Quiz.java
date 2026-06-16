@@ -1,6 +1,7 @@
 public class Quiz {
-   public static void main(String[] args) {
+   
     // Testing...
 
-}
+		public final static void main(String[] a){
+
 }
