@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /***
- * Task 7
+ * Task7.java
  * 
  * Create a program where user inputs two numbers and performs 4 basic arithmetic operations with return types and print the results.
  */
