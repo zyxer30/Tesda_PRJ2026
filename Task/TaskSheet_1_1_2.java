@@ -1,0 +1,69 @@
+/***
+ * Task Sheet 1-1-2
+ * 
+ * Title: Combile the Java arithmetic operators with the simple assignment operator.
+ * Performance Objective: Given a java file ArithmeticTask.java, you should be able to create compund assignments the
+ * source code of a java executable application, and compile it to run in a java virtual machine without errors following
+ * Java Standard Edition specification.
+ * 
+ * Supplies:
+ * 
+ * Equipment: PC or Laptop
+ * 
+ * Steps/Procedure:
+ * 1. Open your Java IDE and create a java file, name it tasksheet-1-1-2 or follow the Trainer's instructions for online IDE's.
+ * 2. Copy the source code from the program ArithmeticTask.java
+ * 3. Paste the source code and change the following program to use compound assignments.
+ * 4. Submit the link of your source code.
+ * 
+ * Assessment Methhod: Portfolio Assessment
+ * 
+ * class ArithmeticTask {
+ *
+ *   public static void main (String[] args){
+ *         
+ *      int result = 1 + 2; // result is now 3
+ *       System.out.println(result);
+ *
+ *       result = result - 1; // result is now 2
+ *       System.out.println(result);
+ *
+ *       result = result * 2; // result is now 4
+ *       System.out.println(result);
+ *
+ *       result = result / 2; // result is now 2
+ *       System.out.println(result);
+ *
+ *       result = result + 8; // result is now 10
+ *       result = result % 7; // result is now 3
+ *       System.out.println(result);
+ *
+ *   }
+ * }
+ */
+
+
+class ArithmeticTask {
+
+    public static void main (String[] args){
+          
+        int result = 1 + 2; // result is now 3
+        System.out.println(result);
+
+        result -= 1; // result is now 2
+        System.out.println(result);
+
+        result *= 2; // result is now 4
+        System.out.println(result);
+
+        result /= 2; // result is now 2
+        System.out.println(result);
+
+        result += 8; // result is now 10
+        System.out.println(result);
+        
+        result %= 7; // result is now 3
+        System.out.println(result);
+
+    }
+}
