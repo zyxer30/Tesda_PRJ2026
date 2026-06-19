@@ -36,14 +36,14 @@ public void setDate(int m, int d, int y) {
     }
 }
 public static void leapYears() {
-    for (int i = 1950; i <= 1984; i = i + 4) {
+    for (int i = 1950; i <= 1984; i = i + 1) {
         if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0))
             System.out.println("The year " + i + " is a leap year");
     }
 }
 
 public static void leapYears(int y1, int y2) {
-    for (int i = y1; i <= y2; i = i ++) {
+    for (int i = y1; i <= y2; i = i++) {
         if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0))
             System.out.println("The year " + i + " is a leap year");
     }

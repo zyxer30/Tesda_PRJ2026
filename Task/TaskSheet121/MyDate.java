@@ -11,7 +11,7 @@ public class MyDate {
         System.out.println(date2.toStringNameString());
     
         // display leapyears
-       DateTask.leapYears();
+       DateTask.leapYears(1950, 1984);
 
     }
 }
