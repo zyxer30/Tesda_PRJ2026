@@ -1,14 +1,15 @@
 package TaskSheet121;
 public class DateTask {
-   // instance variables
- byte day;
- byte month;
- short year;
+ // instance variables
+ private byte day; // 4. In DateTask.java make the instance variables day, month, year to private.
+ private byte month; // 4. In DateTask.java make the instance variables day, month, year to private.
+ private short year;  // 4. In DateTask.java make the instance variables day, month, year to private.
+
 // Constructors:
 
 // The no-args constructor
 public DateTask() {
-    
+    this(1, 1, 1); // 5. Add "this(1,1,1);" statement to the no-args constructor DateTask().
 }
 // Constructor that takes 3 arguments
 public DateTask(int m, int d, int y) {
@@ -16,7 +17,11 @@ public DateTask(int m, int d, int y) {
 }
 // Methods
 public String toString() {
-    return month + "-" + day + "-" + year;
+    return month + "/" + day + "/" + year; // 6. Set toString() method to display "12/12/2012" date format.
+}
+
+public String toStringNameString() {
+    return setMonthName() + " " + day + ", " + year; // 6. Set toString() method to display "12/12/2012" date format.
 }
 public void setDate(int m, int d, int y) {
     if (valid(d, m, y)) {
@@ -31,40 +36,96 @@ public void setDate(int m, int d, int y) {
     }
 }
 public static void leapYears() {
-    for (int i = 1980; i <= 2023; i = i + 4) {
+    for (int i = 1950; i <= 1984; i = i + 4) {
         if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0))
             System.out.println("The year " + i + " is a leap year");
     }
 }
+
+public static void leapYears(int y1, int y2) {
+    for (int i = y1; i <= y2; i = i ++) {
+        if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0))
+            System.out.println("The year " + i + " is a leap year");
+    }
+}
+
 public int getDay() {
-    return day;
+    return day; // 7. The getDay() methods set to return day.
 }
 public void setDay(int day) {
     if (valid(day, month, year)) {
         this.day = (byte) day;
     }
-    
+    else {
+        this.day = 0; // 8. The setDay() methods set to return 0 if condition is false.
+    }
 }
 public int getMonth() {
-    return month;
+   return month;   // 9. The getMonth() method set to return month.
 }
 public void setMonth(int month) {
     if (valid(day, month, year)) {
         this.month = (byte) month;
     }
     else{
-        this.month = (byte) 0;
+        this.month = (byte) 0;  // 10. The setMonth() method set to return 0 if condition is false.
     }
 }
+
+public String setMonthName() {
+    String name;
+    switch (month) {
+        case 1:
+            name = "January ";
+            break;
+        case 2:
+            name = "February";
+            break;
+        case 3:
+            name = "March";
+            break;
+        case 4:
+            name = "April";
+            break;
+        case 5:
+            name = "May";
+            break;
+        case 6:
+            name = "June";
+            break;
+        case 7:
+            name = "July";
+            break;
+        case 8:
+            name = "August";
+            break;
+        case 9:
+            name = "September";
+            break;
+        case 10:
+            name = "October";
+            break;
+        case 11:
+            name = "November";
+            break;
+        case 12:
+            name = "December";
+            break;
+        default:
+            name = "";
+            break;
+    }
+    return name;
+}
 public int getYear() {
-    return year;
+    return year;    // 11. The getYear() method set to return year.
 }
 public void setYear(int year) {
     if (valid(day, month, year)) {
         this.year = (short) year;
     }
     else{
-        this.year = (short) 0;
+        this.year = (short) 0;  // 12. The setYear() method set to return 0 if condition is false.
     }
 }
 private boolean valid(int day, int month, int year) {

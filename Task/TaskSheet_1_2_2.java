@@ -30,7 +30,19 @@
  * Assessment Method: Portfolio Assessment
  * 
  */
+import TaskSheet121.DateTask;
 
 public class TaskSheet_1_2_2 {
+    public static void main(String[] args) {
+        DateTask dt = new DateTask();
+    
+        // 6. Set toString() method to display "12/12/2012" date format.
+        dt.setDate(12, 12, 2012);
+        System.err.println(dt.toString()); 
+
+    }
+
 
 }
+
+
