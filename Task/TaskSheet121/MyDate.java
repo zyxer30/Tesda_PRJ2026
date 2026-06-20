@@ -4,14 +4,15 @@ public class MyDate {
         DateTask date1 = new DateTask();
         DateTask date2 = new DateTask();
 
-        date1.setDate(1, 1, 1950);
+        date1.setDate(1, 1, 1978);
         date2.setDate(9, 21, 1984);
 
         System.out.println(date1.toStringNameString());
         System.out.println(date2.toStringNameString());
     
+       
         // display leapyears
-       DateTask.leapYears(1950, 1984);
+       DateTask.leapYears(date1.getYear(), date2.getYear());
 
     }
 }
