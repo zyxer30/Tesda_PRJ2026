@@ -38,7 +38,8 @@ public class TaskSheet_1_2_2 {
     
         // 6. Set toString() method to display "12/12/2012" date format.
         dt.setDate(12, 12, 2012);
-        System.err.println(dt.toString()); 
+        System.err.println(dt.toString());
+        System.out.println(dt.toStringNameString()); 
 
     }
 
