@@ -1,5 +1,3 @@
-import java.util.function.Predicate;
-
 /***
  * Task16.java
  * 
@@ -15,6 +13,7 @@ import java.util.function.Predicate;
  *  void pet();
  * }
  */
+
 public class Task16 {
     public static void main(String[] args) {
 
